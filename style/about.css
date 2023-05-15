@@ -59,18 +59,22 @@ nav ul li a {
 }
 
 h1 {
-  display: block;
+  display: inline-block;
   color: #39c5f0;
-  font-size: 3vh;
-  margin: 0;
-  text-align: center;
+  font-size: 3vw;
+  margin-top: 2vh;
+}
+
+.sub-head {
+  margin-left: 20px;
+  display: inline-block;
 }
 
 
 /* main*/
 main {
   background-color: #76d7ef;
-  height: 62vh;
+  height: 67vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -92,8 +96,11 @@ fieldset {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
   gap: 10px;
+}
+
+.info p {
+  text-align: center;
 }
 
 .contact {
@@ -121,7 +128,7 @@ textarea {
 
 footer {
   color: #39c5f0;
-  height: 15vh;
+  height: 10vh;
   position: relative;
   bottom: 0;
   display: flex;
