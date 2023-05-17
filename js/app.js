@@ -11,9 +11,9 @@ userAge = Number(prompt("Give me your age"));
 if (userAge <= 0) alert("A negative number is not allowed for age");
 
 function welcomingMessage() {
-  if (userGender === "female") alert("Hello Ms " + userName);
-  else if (userGender === "male") alert("Hello Mr " + userName);
-  else alert("Hello " + userName);
+  if (userGender === "female") alert("Welccome Ms " + userName);
+  else if (userGender === "male") alert("Welcome Mr " + userName);
+  else alert("Welcome " + userName);
 }
 
 let welcomeQuestion = confirm("Do you want to skip the welcoming message?");
@@ -26,7 +26,7 @@ if (welcomeQuestion == false) {
 
 let additionalQuestions = confirm("Would you like to take other questions?")
 
-if (additionalQuestions === true) {
+function additionalStage() {
 
   let question1, question2, question3;
 
@@ -39,7 +39,7 @@ if (additionalQuestions === true) {
   function checkResult(question) {
     if (question === "yes") { arrAnswers.push("yes") }
     else if (question === "no") { arrAnswers.push("no") }
-    else if (question === "") { arrAnswers.push("invalid") }
+    else { arrAnswers.push("invalid") }
   }
 
   checkResult(question1)
@@ -51,6 +51,12 @@ if (additionalQuestions === true) {
     console.log(arrAnswers[i]);
   }
 
+
+}
+
+if (additionalQuestions === true) {
+
+  additionalStage()
 }
 
 
